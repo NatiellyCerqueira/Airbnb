@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <ul class="listaImg"></ul>
+
+    <span></span>
+<script>
+   const lista = [
+        {
+            imagem: 'https://a0.muscache.com/im/pictures/2d8fd134-8d7c-4b69-a37e-17558908c426.jpg?im_w=720',
+            lugar:'Costa Rica',
+            km:'4.912',
+            data:'25/08',
+            valor:'230,00 noite',   
+        },
+
+        {
+            imagem: 'https://a0.muscache.com/im/pictures/miso/Hosting-5264493/original/10d2c21f-84c2-46c5-b20b-b51d1c2c971a.jpeg?im_w=720',
+            lugar:'portugal',
+            km:'4.521',
+            data:'26/08',
+            valor:'250,00',   
+        },
+        {
+            imagem: 'https://a0.muscache.com/im/pictures/da9516c7-04a3-4787-a82e-b58c3ac5e865.jpg?im_w=720',
+            lugar:'Estados Unidos',
+            km:'4.521',
+            data:'27/08',
+            valor:'280,00',   
+        },
+
+    ]
+    lista.forEach(function(item){
+        document.querySelector(".listaImg").innerHTML +=
+        `<li>
+            <img src="${item.imagem}">
+            <span>${item.lugar} </span>
+            <span>${item.km} </span>
+            <span>${item.data} </span>
+            <span>${item.valor} </span>
+        </li>
+        `
+    })
+
+
+
+</script>
+
+
+</body>
+</html>
